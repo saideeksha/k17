@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HARRY POTTER IV</title>
+<style>
+.slideshow-container {
+  max-width: 300px;
+  max-height:300px;
+  height:300px;
+  width:300px;
+  position: relative;
+  margin: 0px 0px 0px 200px;
+}
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+<body bgcolor="darksalmon">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="philostone5.jpg" style="width:300px;height:300px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="philostone51.jpg" style="width:300px;height:300px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="philostone52.jpg" style="width:300px;height:300px;">
+</div>
+<div class="mySlides fade">
+  <img src="philostone53.jpg" style="width:300px;height:300px;">
+</div>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1;}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<p>Harry Potter and the Goblet of Fire is the fourth novel in the Harry Potter series, written by British author J. K. Rowling. It follows Harry Potter, a wizard in his fourth year at Hogwarts School of Witchcraft and Wizardry and the mystery surrounding the entry of Harry's name into the Triwizard Tournament, in which he is forced to compete.
+</p>
+</body>
+</html>

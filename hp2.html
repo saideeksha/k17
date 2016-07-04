@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HARRY POTTER II</title>
+<style>
+.slideshow-container {
+  height:300px;
+  width:300px;
+  position: relative;
+  margin: 0px 0px 0px 200px;
+}
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+<body bgcolor="darksalmon">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="philostone34.jpg" style="width:300px;height:300px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="philostone31.jpg" style="width:300px;height:300px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="philostone32.jpg" style="width:300px;height:300px;">
+</div>
+<div class="mySlides fade">
+  <img src="philostone33.jpg" style="width:300px;height:300px;">
+</div>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1;}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<p>Harry Potter and the Chamber of Secrets is the second novel in the Harry Potter series, written by J. K. Rowling. The plot follows Harry's second year at Hogwarts School of Witchcraft and Wizardry, during which a series of messages on the walls of the school's corridors warn that the "Chamber of Secrets" has been opened and that the "heir of Slytherin" would kill all pupils who do not come from all-magical families. These threats are found after attacks which leave residents of the school "petrified" (frozen like stone). Throughout the year, Harry and his friends Ron Weasley and Hermione Granger investigate the attacks.
+</p>
+</body>
+</html>

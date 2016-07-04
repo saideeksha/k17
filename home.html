@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<SCRIPT TYPE="text/javascript"> 
+<!--
+ function popup(mylink, windowname)
+ { 
+ if (! window.focus)
+	return true; 
+	var href;
+	if (typeof(mylink) == 'string')
+	href=mylink;
+	else href=mylink.href;
+	window.open(href, windowname, 'width=700,height=500,left=100,top=100,channelmode=yes,scrollbars=yes');
+	return false; 	
+	}
+	//-->
+	</SCRIPT>
+<style>
+
+
+.topmenu ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topmenu li {
+    float: right;
+}
+
+.topmenu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topmenu li a:hover:not(.active) {
+    background-color:green;
+}
+
+.active {
+    background-color: pink;
+}
+.title {
+	
+  font-family: georgia;
+  font-size: 50px;
+  display: block;
+  color: darkgrey;
+  font-weight:bold; 
+  text-align: Center;
+}
+.main-body {
+
+  max-width: 480px;
+  margin: 0 auto;
+  display: block;
+  }
+ .hp-menu ul {
+    list-style-type: none;
+   
+}
+.hp-menu li {
+	float :left;
+	margin:150px 0px 0px 170px ;
+	width:200px;
+	position:relative;
+	display:block;
+}
+.hp-menu li a {
+    display: block;
+    color: yellow;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.hp-menu li a:hover:not(.active) {
+	padding:10px 10px 10px 10px;
+    
+}
+
+.hp-menu li ul{
+	display: none;
+	position : absolute;
+	}
+.hp-menu li:hover ul{ display:block;padding:0px 10px 0px 10px; height:auto; width:8em; }
+.hp-menu li ul li{ clear:both; border-style:none;margin:5px;background:grey;}
+.scroll{
+	padding: 200px 20px 10px 500px;
+	} 
+	a.glow,a.glow:hover,a.glow:focus{
+		text-decoration: none;
+		color: orange;
+		text-shadow: none;
+		-webkit-transition: 500ms linear 0s;
+		-moz-transition: 500ms linear 0s;
+		-o-transition: 500ms linear 0s;
+		transition: 500ms linear 0s;
+		outline: 0 none;
+		}
+	a.glow:hover,a.glow:focus{
+		color:red;
+		text-shadow: -2px 2px 8px #fff,2px -2px 8px #fff;
+		}
+</style>
+</head>
+<body background="wall6.jpg">
+<div class="topmenu">
+<ul>
+<!--  <li><a class="active" href="ref1.html">Home</a></li>-->
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+</div>
+<div class="main-body">
+<h1 class="title"></h1>
+</div>
+<div class="hp-menu">
+<ul>
+	<li><a href="#MAIN CHARACTERS" class="glow" >MAIN CHARACTERS</a>
+	<ul>
+	<li><a href="harrypotter.html" class="glow" onclick="return popup(this,'harry')" >HARRY</a></li>
+	<li><a href="hermione.html" class="glow" onclick="return popup(this,'hermoine')">HERMOINE</a></li>
+	<li><a href="ron.html" class="glow" onclick="return popup(this,'ron')">RON</a></li>
+    </ul>
+	</li>
+	<li><a href="director.html" class="glow">AUTHOR</a></li>
+	<li><a href="#parts" class="glow">PARTS</a>
+	<ul>
+	<li><a href="hp1.html" class="glow" onclick="return popup(this,'hp-1')">PART 1</a></li>
+	<li><a href="hp2.html" class="glow" onclick="return popup(this,'hp-2')">PART 2</a></li>
+	<li><a href="hp3.html" class="glow" onclick="return popup(this,'hp-3')">PART 3</a></li>
+	<li><a href="hp4.html" class="glow" onclick="return popup(this,'hp-4')">PART 4</a></li>
+	</ul>
+	</li>
+<ul>
+</div>
+<div class="scroll">
+<marquee bgcolor="#ccccc" onMouseOver="this.scrollAmount=0" onMouseOut="this.scrollAmount=2" scrollamount="2" direction="up" loop="true"width="50%">
+<center>
+<a href="characters.html" class="glow">list of harrypotter characters</a>
+<br>
+<br>
+<br>
+<a href="spells.html" class="glow">top 10 hp spells</a>
+<br>
+<br>
+<br>
+<a href="novel.html" class="glow">harrypotter novel series</a>
+<br>
+</center>
+</marquee>
+</div>
+</body>
+</html>
+
